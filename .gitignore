@@ -1,0 +1,5 @@
+*node_modules
+*three.js-master
+*dat.gui.min.js
+*three.min.js
+*workingFile.js
