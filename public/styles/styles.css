@@ -1,9 +1,11 @@
 *{
 	font-family:'Inconsolata', monospace;
 	/*text-align: center;*/
-
 }
-
+body {
+	width: 100%;
+	margin: 0;
+}
 
 .head {
 	background-color: #cac7d7;
@@ -41,10 +43,6 @@
 	color: #8a8604;
 }
 
-img {
-	width:50%;
-}
-
 .bode{
 	width: 100%;
 	padding: 0;
@@ -71,22 +69,33 @@ img {
 
 	
 
-.portfolio {
+/*.portfolio {
+	width:100%;
+	height: 100%;
 	max-width: 80%;
-	margin: 0 auto;
+	margin: 0;
 }
-
+*/
 .portfolio img{
-	width: 100%;
+	/*width: 100%;*/
 	border: solid black 2px;
 }
 
-@media(min-device-width: 768px){
-	.portfolio{
+/*@media(min-device-width: 768px){
+	.portfolioElement{
 	max-width: 35%;
 	padding-left: 2%;
 	padding-right: 2%;
 	}
+}*/
+
+.portfolioElement{	
+}
+
+
+.titles {
+	text-align: center;
+}
 
 
 .image-container{
@@ -96,18 +105,53 @@ img {
 .image-container .after {
 	display: none;
 	position: absolute;
-    top: 0;
+    bottom: 0;
     left: 0;
-    width: 100	%;
+    width: 100%;
     height: 100%;
 }
 
 .image-container:hover .after {
     display: block;
+    font-weight: 700;
+    font-size: 5em;
     background: rgba(0, 0, 0, .6);
     color: white;
     text-align: center;
+   	padding-top: 1.5em;
 }
+
+.modalText {
+	font-size: 1.5em;
+}
+
+body .modal-dialog {
+	width: 60%;
+	
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.thumb{
+	max-height: 230;
+}
+
+.technologies {
+	text-align: center;
+	margin-top: 10%;
+	background-color: black;
+	color: white;
+	padding-top: 5%;
+	padding-bottom: 5%;
+}
+
+.technologies p {
+	font-size: 2em;
+}
+
+/*.modal-content{
+	width: 100%;
+}*/
 
 
 
