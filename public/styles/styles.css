@@ -71,8 +71,35 @@ img {
 
 	
 
-.projects{
-	background-color: rgba(139, 182, 249, 0.7);
+.portfolio {
+	max-width: 35%;
+	padding-left: 2%;
+	padding-right: 2%;
+}
+
+.portfolio img{
+	width: 100%;
+	border: solid black 2px;
+}
+
+.image-container{
+	position:relative;
+}
+
+.image-container .after {
+	display: none;
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.image-container:hover .after {
+    display: block;
+    background: rgba(0, 0, 0, .6);
+    color: white;
+    text-align: center;
 }
 
 
